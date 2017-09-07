@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/PreferenceFixTheme.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryLight">@color/primary_light</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+        <item name="colorText">@color/white</item>
+        <item name="colorTextPrimary">@color/grey_900</item>
+        <item name="colorTextSecondary">@color/grey</item>
+        <item name="colorDivider">@color/grey_light</item>
+    </style>
+
+    <!-- Define your custom dialog theme here extending from base -->
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Define color properties as desired -->
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="android:textColorHighlight">@color/indigo_100</item>
+        <item name="colorAccent">@color/green_500</item>
+        <item name="colorControlNormal">@color/indigo_700</item>
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="SignInTheme" parent="AppTheme">
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="InputInfoEditTxt">
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/colorText</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_baseColor">@color/white</item>
+        <item name="met_primaryColor">@color/white</item>
+        <item name="met_errorColor">@color/white</item>
+    </style>
+
+    <style name="NormalBtn" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:minWidth">80dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/server_location_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppBarStyle" parent="Widget.Design.AppBarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">306dp</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TabTextAppearanceStyle</item>
+    </style>
+
+    <style name="TabTextAppearanceStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="FlatButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+</resources>

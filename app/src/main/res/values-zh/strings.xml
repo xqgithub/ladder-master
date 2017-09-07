@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">云梯</string>
+    <string name="navigation_drawer_open">打开侧栏</string>
+    <string name="navigation_drawer_close">关闭侧栏</string>
+    <string name="action_settings">设置</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_out">注销</string>
+    <string name="action_about">关于</string>
+    <string name="action_vpn">翻墙</string>
+    <string name="others">其它</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="stop">停止</string>
+    <string name="shut_down">正在关闭&#8230;</string>
+    <string name="invalid_server">服务器名无效</string>
+    <string name="service_failed">无法连接远程服务器</string>
+    <string name="reboot_required">VPN 服务启动失败,请重启您的设备。</string>
+    <string name="error_invalid_email">请输入一个有效的邮箱地址</string>
+    <string name="error_password_too_short">密码必须至少为 6 个字符。</string>
+    <string name="error_email_required">必须填写用户名。</string>
+    <string name="connect">连接</string>
+    <string name="connecting">连接中</string>
+    <string name="connected">已连接</string>
+    <string name="stopping">关闭中</string>
+    <string name="infinity">无限</string>
+    <string name="us">美国</string>
+    <string name="hk">香港</string>
+    <string name="jp">日本</string>
+
+    <string name="feature_category">功能设定</string>
+    <string name="mode">模式</string>
+    <string name="global_mode">全局模式</string>
+    <string name="global_mode_summary">所有的流量都会经过 VPN</string>
+    <string name="auto_mode">代理模式</string>
+    <string name="auto_mode_summary">大陆的网点会绕过 VPN 直接访问</string>
+
+    <string-array name="vpn_tabs">
+        <item>控制面板</item>
+        <item>设置</item>
+    </string-array>
+</resources>

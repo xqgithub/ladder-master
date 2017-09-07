@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">@color/indigo_500</color>
+    <color name="primary_dark">@color/indigo_700</color>
+    <color name="primary_light">@color/indigo_100</color>
+    <color name="accent">@color/pink_a200</color>
+    <color name="accent_a700">@color/pink_a700</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="preference_accent">@color/accent</color>
+
+    <color name="gray">#444440</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="material_blue_grey_700">#455A64</color>
+    <color name="grey">#727272</color>
+    <color name="grey_light">#B6B6B6</color>
+    <color name="grey_lighter">#EAEAEB</color>
+    <color name="black_30_transparent">#4D000000</color>
+    <color name="black_15_transparent">#26000000</color>
+    <color name="white_40_transparent">#66FFFFFF</color>
+</resources>

@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        // Major -> Thousands, Minor -> Hundreds, Bugfix -> Tens. E.g 1.3.72 == 1372
+        versionName rootProject.versionName
+    }
+
+    //添加NDK自定义android.mk 支持
+    sourceSets.main {
+        jni.srcDirs = [] //disable automatic ndk-build call
+        jniLibs.srcDir 'src/main/libs'
+    }
+}

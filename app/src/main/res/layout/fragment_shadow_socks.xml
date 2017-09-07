@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/img_world_map" />
+
+        <cc.cloudist.app.ui.widget.LocationDotView
+            android:id="@+id/location_us"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="65dp"
+            android:visibility="gone"
+            app:fading_circle_color="@color/accent"
+            app:stationary_circle_color="@color/accent" />
+
+        <cc.cloudist.app.ui.widget.LocationDotView
+            android:id="@+id/location_hk"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="90dp"
+            android:visibility="gone"
+            app:fading_circle_color="@color/accent"
+            app:stationary_circle_color="@color/accent" />
+
+        <cc.cloudist.app.ui.widget.LocationDotView
+            android:id="@+id/location_jp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"
+            app:fading_circle_color="@color/accent"
+            app:stationary_circle_color="@color/accent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="62dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/grey_lighter">
+
+                <TextView
+                    android:id="@+id/txt_traffic_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/ic_out"
+                    tools:text="2.56 MB" />
+
+                <TextView
+                    android:id="@+id/txt_traffic_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/ic_in"
+                    tools:text="8.9 MB" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <Button
+                    android:id="@+id/btn_hk"
+                    style="@style/FlatButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hk"
+                    android:textColor="@color/server_location_text_color" />
+
+                <Button
+                    android:id="@+id/btn_us"
+                    style="@style/FlatButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/us"
+                    android:textColor="@color/server_location_text_color" />
+
+                <Button
+                    android:id="@+id/btn_jp"
+                    style="@style/FlatButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jp"
+                    android:textColor="@color/server_location_text_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.github.jorgecastilloprz.FABProgressCircle
+            android:id="@+id/progress_connect_vpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:reusable="true">
+
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/img_circle"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/connect_vpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/ic_wifi"
+                    android:gravity="center"
+                    android:text="@string/connect" />
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/txt_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    android:text="@string/infinity"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </com.github.jorgecastilloprz.FABProgressCircle>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="msg_now">Just now</string>
+    <string name="msg_today">Today</string>
+    <string name="msg_yesterday">Yesterday</string>
+    <string name="msg_few_minutes_ago">Minutes ago</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="sorry">Sorry</string>
+</resources>

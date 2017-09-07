@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/feature_category">
+        <ListPreference
+            android:defaultValue="all"
+            android:dialogTitle="@string/mode"
+            android:entries="@array/route_entry"
+            android:entryValues="@array/route_value"
+            android:key="@string/sp_key_route"
+            android:summary="@string/global_mode_summary"
+            android:title="@string/global_mode" />
+    </PreferenceCategory>
+</PreferenceScreen>

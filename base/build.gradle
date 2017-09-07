@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        // Major -> Thousands, Minor -> Hundreds, Bugfix -> Tens. E.g 1.3.72 == 1372
+        versionName rootProject.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+
+    final RETROFIT = '2.0.2'
+    final ICE_PICKER = '3.2.0'
+    final OKHTTP_VERSION = '3.2.0'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:$rootProject.supportVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.supportVersion"
+    compile "com.android.support:design:$rootProject.supportVersion"
+    compile "com.android.support:cardview-v7:$rootProject.supportVersion"
+
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT"
+    compile "com.squareup.retrofit2:adapter-rxjava:$RETROFIT"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT"
+
+    compile "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"
+    compile "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
+
+    compile 'com.facebook.fresco:fresco:0.10.0'
+
+    compile "frankiesardo:icepick:$ICE_PICKER"
+    provided "frankiesardo:icepick-processor:$ICE_PICKER"
+}
